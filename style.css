@@ -21,7 +21,7 @@ section h6{font-size: 20px;font-weight: 400;margin-top: 20px;margin-bottom: 30px
 .project_summary .col_absolute{position: absolute;}
 .project_summary .img_hgt img{height: 500px;object-fit: cover;border-radius: 10px;}
 .highlight {background: #f5f5f5;}
-.highlight h1{font-size: 50px;font-weight: 600;margin-bottom: 30px;}
+.highlight h1{ font-weight: 600;margin-bottom: 30px;}
 .highlight h5{font-size: 16px;font-weight: 400;margin-top: 20px;}
 .highlight .highlight_detail img{width: 40px;}
 .highlight .highlight_detail {padding: 30px 20px;border: 1px solid #00000014;}
@@ -34,7 +34,7 @@ section h6{font-size: 20px;font-weight: 400;margin-top: 20px;margin-bottom: 30px
 .amenities .amenities_detail::before{content: "";position: absolute;top: 0;left: 0;right: 0;bottom: 0;background: linear-gradient(180deg, rgb(0 0 0 / 30%), rgb(0 0 0 / 50%));z-index: 0;transition: all 0.3s ease}
 .amenities .amenities_detail:hover::before{background: transparent}
 .amenities .amenities_detail img{height: 100%;width: 100%;object-fit: cover;}
-.amenities .amenities_detail h5{position: absolute;bottom: 10px;left: 10px;color: white;font-size: 18px;font-weight: 400;text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);width: 100%;transition: all 0.3s ease}
+.amenities .amenities_detail h5{position: absolute;bottom: 10px;left: 0px;color: white;font-size: 18px;font-weight: 400;text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);width: 100%;transition: all 0.3s ease}
 .amenities .amenities_detail:hover h5{display: none;}
 .map iframe{border-radius: 8px;}
 .location_detail ul{list-style: none;padding: 0;}
@@ -53,4 +53,18 @@ footer h3{font-size: 18px;font-weight: 300;}
 footer a{background: #fff;padding: 10px 25px;text-decoration: none;border-radius: 5px;display: inline-block;color: #ec6551;font-size: 16px;font-weight: 600;margin-top: 20px;}
 
 
-@media only screen and (max-width: 600px) {.gallery .main .container {display: grid;grid-template-columns: 1fr;grid-gap: 1rem;}}
+@media only screen and (max-width: 600px) {.gallery .main .container {display: grid;grid-template-columns: repeat(2, 1fr);grid-gap: 5px;}.gallery .main{padding: 0px;}}
+
+@media (max-width: 767px) {.banner{height: 100%;padding: 30px 0;}.banner h1{font-size: 28px;line-height: 40px;} .banner h3{font-size: 18px;margin-top: 0;}.banner a{margin-top: 10px;font-size: 15px;} .form_section h2{font-size: 24px;margin-bottom: 0px;} section h1{font-size: 24px;} .highlight h1{margin-bottom: 15px;}.form_section{padding:30px 10px; margin-top: 20px;}section{padding: 30px 0px;}.project_summary .col_absolute {position: relative;}.project_summary h1 {margin-bottom: 20px;}.project_summary ul li {font-size: 15px;display: flex;align-items: center;margin-bottom: 10px;}.project_summary ul li img{width: 35px;margin-right: 5px;margin-bottom: 0;}.project_detail{height: auto;padding: 15px;border-radius: 0px;}.project_summary .img_hgt img{height: auto;border-radius: 0px;}.highlight .highlight_detail img {width: 28px;}.highlight h5 {font-size: 13px;margin-top: 15px;}section h6{font-size: 16px;margin-top: 10px;margin-bottom: 20px;}
+.amenities .amenities_detail{height: 130px;}
+.amenities .amenities_detail h5{font-size: 14px;}
+.location_detail{margin-top: 10px;}
+.location_detail ul li{font-size: 13px;display: flex;align-items: center;}
+.location_detail ul li img {width: 16px;margin-right: 5px;}
+.about_us h1{margin-top: 20px;}
+.about_us p{font-size: 14px;line-height: 26px;}
+footer{padding: 25px 0px;}
+footer h1 {font-size: 22px;margin-bottom: 10px;}
+footer h3{font-size: 16px;margin-bottom: 10px;}
+footer a{margin-top: 10px;font-size: 15px; font-weight: 500;}
+}
